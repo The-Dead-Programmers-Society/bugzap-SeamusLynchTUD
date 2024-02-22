@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvt5uu18dg5vw"]
+[gd_scene load_steps=5 format=3 uid="uid://bvt5uu18dg5vw"]
 
 [ext_resource type="Script" path="res://MovementScript.gd" id="1_8s84j"]
 
@@ -6,6 +6,8 @@
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_fba8x"]
 specular_color = Color(0.67451, 0.486275, 1, 1)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_8s2lh"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -20,3 +22,9 @@ shape = SubResource("RectangleShape2D_lf6qg")
 modulate = Color(0.956863, 0.431373, 1, 1)
 scale = Vector2(50, 50)
 texture = SubResource("CanvasTexture_fba8x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(502, 187)
+scale = Vector2(50, 50)
+texture = SubResource("CanvasTexture_8s2lh")
