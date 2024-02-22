@@ -10,6 +10,7 @@ specular_color = Color(0.67451, 0.486275, 1, 1)
 [node name="Node2D" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(500, 900)
 script = ExtResource("1_8s84j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -17,6 +18,5 @@ shape = SubResource("RectangleShape2D_lf6qg")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 modulate = Color(0.956863, 0.431373, 1, 1)
-position = Vector2(500, 900)
 scale = Vector2(50, 50)
 texture = SubResource("CanvasTexture_fba8x")
