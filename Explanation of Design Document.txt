@@ -1,0 +1,9 @@
+Explanation of Soundboard Design
+--------------------------------
+Name: Bosca Dearg (Inspired from Bosca Ceoil, the music tool I will be getting my sounds from.)
+
+Features:
+Bass Guitar sound strip.
+Synth sound strip.
+A button that will play a consistent note of your last played note at the moment of pressing it.
+A button that will stop the consistent note if one is playing.
