@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ck66a8invg20g"
+path="res://.godot/imported/Sci-Fi Synth 3.wav-8a80b2aaee7cc74ae48421777009a6f2.sample"
+
+[deps]
+
+source_file="res://Samples/Sci-Fi Synth 3.wav"
+dest_files=["res://.godot/imported/Sci-Fi Synth 3.wav-8a80b2aaee7cc74ae48421777009a6f2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

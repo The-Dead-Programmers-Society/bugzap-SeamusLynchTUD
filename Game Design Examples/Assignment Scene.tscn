@@ -1,0 +1,232 @@
+[gd_scene load_steps=16 format=3 uid="uid://bv1vlrmjcjsna"]
+
+[ext_resource type="Script" path="res://root1.gd" id="1_xgocf"]
+[ext_resource type="Script" path="res://sequencer.gd" id="2_f7sqc"]
+[ext_resource type="AudioStream" uid="uid://diero51iyeb3x" path="res://Samples/Steel Guitar 1.wav" id="5_qf0ra"]
+[ext_resource type="AudioStream" uid="uid://br281glscx1io" path="res://Samples/Steel Guitar 2.wav" id="6_1cpb3"]
+[ext_resource type="AudioStream" uid="uid://bhh7s52ecw53o" path="res://Samples/Steel Guitar 3.wav" id="7_o1g4c"]
+[ext_resource type="AudioStream" uid="uid://beqcrjwxdevtn" path="res://Samples/Steel Guitar 4.wav" id="8_nercg"]
+[ext_resource type="AudioStream" uid="uid://blh1b3yj5l3xy" path="res://Samples/Steel Guitar 5.wav" id="9_hongq"]
+[ext_resource type="AudioStream" uid="uid://bvuygj4djedlm" path="res://Samples/Sci-Fi Synth 1.wav" id="10_b5573"]
+[ext_resource type="AudioStream" uid="uid://bu3ttjsmf4a43" path="res://Samples/Sci-Fi Synth 2.wav" id="11_vpa6h"]
+[ext_resource type="AudioStream" uid="uid://ck66a8invg20g" path="res://Samples/Sci-Fi Synth 3.wav" id="12_prlr4"]
+[ext_resource type="AudioStream" uid="uid://be1xliieimyfg" path="res://Samples/Sci-Fi Synth 4.wav" id="13_4k41f"]
+[ext_resource type="AudioStream" uid="uid://uejut147h85v" path="res://Samples/Sci-Fi Synth 5.wav" id="14_3b6hg"]
+[ext_resource type="Texture2D" uid="uid://dvy3ailra4h18" path="res://Samples/Space.jpg" id="14_vsuwe"]
+[ext_resource type="Script" path="res://buttonScript.gd" id="17_lwi86"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_i25ar"]
+
+[node name="root" type="Node2D"]
+script = ExtResource("1_xgocf")
+
+[node name="sequencer" type="Node2D" parent="."]
+script = ExtResource("2_f7sqc")
+
+[node name="SteelGuitar1" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("5_qf0ra")
+
+[node name="SteelGuitar2" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("6_1cpb3")
+
+[node name="SteelGuitar3" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("7_o1g4c")
+
+[node name="SteelGuitar4" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("8_nercg")
+
+[node name="SteelGuitar5" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("9_hongq")
+
+[node name="Synth1" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("10_b5573")
+
+[node name="Synth2" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("11_vpa6h")
+
+[node name="Synth3" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("12_prlr4")
+
+[node name="Synth4" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("13_4k41f")
+
+[node name="Synth5" type="AudioStreamPlayer" parent="sequencer"]
+unique_name_in_owner = true
+stream = ExtResource("14_3b6hg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 807.0
+offset_top = 211.0
+offset_right = 943.0
+offset_bottom = 242.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Steel Guitar 5 (T)"
+script = ExtResource("17_lwi86")
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 606.0
+offset_top = 214.0
+offset_right = 743.0
+offset_bottom = 245.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Steel Guitar 4 (R)"
+script = ExtResource("17_lwi86")
+
+[node name="Button3" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 405.0
+offset_top = 214.0
+offset_right = 541.0
+offset_bottom = 245.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Steel Guitar 3 (E)"
+script = ExtResource("17_lwi86")
+
+[node name="Button4" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 204.0
+offset_top = 215.0
+offset_right = 346.0
+offset_bottom = 246.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Steel Guitar 2 (W)"
+script = ExtResource("17_lwi86")
+
+[node name="Button5" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 7.0
+offset_top = 215.0
+offset_right = 147.0
+offset_bottom = 246.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Steel Guitar 1 (Q)"
+script = ExtResource("17_lwi86")
+
+[node name="Button6" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 29.0
+offset_top = 461.0
+offset_right = 142.0
+offset_bottom = 492.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Synth 1 (A)"
+script = ExtResource("17_lwi86")
+
+[node name="Button7" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 203.0
+offset_top = 465.0
+offset_right = 316.0
+offset_bottom = 496.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Synth 2 (S)"
+script = ExtResource("17_lwi86")
+
+[node name="Button8" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 405.0
+offset_top = 465.0
+offset_right = 518.0
+offset_bottom = 496.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Synth 3 (D)"
+script = ExtResource("17_lwi86")
+
+[node name="Button9" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 595.0
+offset_top = 465.0
+offset_right = 708.0
+offset_bottom = 496.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Synth 4 (F)"
+script = ExtResource("17_lwi86")
+
+[node name="Button10" type="Button" parent="CanvasLayer"]
+modulate = Color(0.698039, 0.137255, 0.721569, 1)
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 793.0
+offset_top = 472.0
+offset_right = 906.0
+offset_bottom = 503.0
+scale = Vector2(1.29951, 2.59341)
+toggle_mode = true
+button_pressed = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_i25ar")
+text = "Synth 5 (G)"
+script = ExtResource("17_lwi86")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(472, 472)
+scale = Vector2(-5.98846, 8.48422)
+texture = ExtResource("14_vsuwe")
+
+[connection signal="pressed" from="CanvasLayer/Button" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button3" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button4" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button5" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button6" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button7" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button8" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button9" to="sequencer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button10" to="sequencer" method="_on_button_pressed"]
